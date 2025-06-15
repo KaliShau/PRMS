@@ -101,94 +101,107 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DepartamentForm.cs">
+    <Compile Include="src\modules\AddRecord\AddRecordController.cs" />
+    <Compile Include="src\modules\Admin\AdminController.cs" />
+    <Compile Include="src\modules\AllRecords\AllRecordsController.cs" />
+    <Compile Include="src\modules\Departaments\DepartmentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartamentForm.Designer.cs">
-      <DependentUpon>DepartamentForm.cs</DependentUpon>
+    <Compile Include="src\modules\Departaments\DepartmentsForm.Designer.cs">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddRecordForm.cs">
+    <Compile Include="src\modules\AddRecord\AddRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddRecordForm.Designer.cs">
+    <Compile Include="src\modules\AddRecord\AddRecordForm.Designer.cs">
       <DependentUpon>AddRecordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminForm.cs">
+    <Compile Include="src\modules\Admin\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm.Designer.cs">
+    <Compile Include="src\modules\Admin\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllRecordsForm.cs">
+    <Compile Include="src\modules\AllRecords\AllRecordsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllRecordsForm.Designer.cs">
+    <Compile Include="src\modules\AllRecords\AllRecordsForm.Designer.cs">
       <DependentUpon>AllRecordsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DB.cs" />
-    <Compile Include="HomeForm.cs">
+    <Compile Include="src\core\DB.cs" />
+    <Compile Include="src\modules\Departaments\DepartmentsController.cs" />
+    <Compile Include="src\modules\Home\HomeController.cs" />
+    <Compile Include="src\modules\Home\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeForm.Designer.cs">
+    <Compile Include="src\modules\Home\HomeForm.Designer.cs">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LKForm.cs">
+    <Compile Include="src\modules\Home\SideBar.cs" />
+    <Compile Include="src\modules\LK\LKController.cs" />
+    <Compile Include="src\modules\LK\LKForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LKForm.Designer.cs">
+    <Compile Include="src\modules\LK\LKForm.Designer.cs">
       <DependentUpon>LKForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="src\modules\Login\LoginController.cs" />
+    <Compile Include="src\modules\Login\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="src\modules\Login\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyDepartamentRecordForm.cs">
+    <Compile Include="src\modules\MyDepartmentRecord\MyDepartamentRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyDepartamentRecordForm.Designer.cs">
+    <Compile Include="src\modules\MyDepartmentRecord\MyDepartamentRecordForm.Designer.cs">
       <DependentUpon>MyDepartamentRecordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyRecordsForm.cs">
+    <Compile Include="src\modules\MyDepartmentRecord\MyDepartmentRecordController.cs" />
+    <Compile Include="src\modules\MyRecords\MyRecordsController.cs" />
+    <Compile Include="src\modules\MyRecords\MyRecordsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyRecordsForm.Designer.cs">
+    <Compile Include="src\modules\MyRecords\MyRecordsForm.Designer.cs">
       <DependentUpon>MyRecordsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterForm.cs">
+    <Compile Include="src\modules\Register\RegisterController.cs" />
+    <Compile Include="src\modules\Register\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterForm.Designer.cs">
+    <Compile Include="src\modules\Register\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DepartamentForm.resx">
-      <DependentUpon>DepartamentForm.cs</DependentUpon>
+    <Compile Include="src\shared\FormManager.cs" />
+    <Compile Include="src\shared\TopBar.cs" />
+    <EmbeddedResource Include="src\modules\Departaments\DepartmentsForm.resx">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddRecordForm.resx">
+    <EmbeddedResource Include="src\modules\AddRecord\AddRecordForm.resx">
       <DependentUpon>AddRecordForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminForm.resx">
+    <EmbeddedResource Include="src\modules\Admin\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllRecordsForm.resx">
+    <EmbeddedResource Include="src\modules\AllRecords\AllRecordsForm.resx">
       <DependentUpon>AllRecordsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeForm.resx">
+    <EmbeddedResource Include="src\modules\Home\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LKForm.resx">
+    <EmbeddedResource Include="src\modules\LK\LKForm.resx">
       <DependentUpon>LKForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="src\modules\Login\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyDepartamentRecordForm.resx">
+    <EmbeddedResource Include="src\modules\MyDepartmentRecord\MyDepartamentRecordForm.resx">
       <DependentUpon>MyDepartamentRecordForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyRecordsForm.resx">
+    <EmbeddedResource Include="src\modules\MyRecords\MyRecordsForm.resx">
       <DependentUpon>MyRecordsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -201,7 +214,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RegisterForm.resx">
+    <EmbeddedResource Include="src\modules\Register\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="docker-compose.yml" />
